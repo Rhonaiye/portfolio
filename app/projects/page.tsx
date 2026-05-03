@@ -1,14 +1,5 @@
-import React from 'react'
-import Navbar from '../components/ui/navbar'
-import ProjectsSection from '../components/layout/projectsSection'
+import { redirect } from "next/navigation";
 
-function page() {
-  return (
-    <div>
-      <Navbar/>
-      <ProjectsSection/>
-    </div>
-  )
+export default function ProjectsPage() {
+  redirect("/#work");
 }
-
-export default page

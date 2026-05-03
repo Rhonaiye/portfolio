@@ -1,14 +1,5 @@
-import React from 'react'
-import Navbar from '../components/ui/navbar'
-import HireMePage from '../components/layout/hireSection'
+import { redirect } from "next/navigation";
 
-function page() {
-  return (
-    <div>
-        <Navbar/>
-        <HireMePage/>
-    </div>
-  )
+export default function HirePage() {
+  redirect("/#contact");
 }
-
-export default page
